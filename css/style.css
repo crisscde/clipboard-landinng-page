@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+
+:root {
+  --StrongCyan: hsl(171, 66%, 44%);
+  --LightBlue: hsl(233, 100%, 69%);
+  --DarkGrayishBlue: hsl(210, 10%, 33%);
+  --GrayishBlue: hsl(202, 11%, 66%);
+}
+
+body {
+  font-family: 'Bai Jamjuree', sans-serif;
+  margin: 0;
+  background-color: rgb(246, 246, 246);
+  overflow-x: hidden;
+}
+
+p {
+  font-size: 1.125rem;
+  font-weight: 400;
+  color: var(--GrayishBlue);
+  line-height: 2rem;
+}
+
+h1,
+h2 {
+  color: var(--DarkGrayishBlue);
+  font-weight: 600;
+}
+
+/* Block */
+.clipboard {
+  background-image: url(/images/bg-header-mobile.png), linear-gradient(0deg, rgba(246, 246, 246, 0.9) 0%, rgba(159, 171, 178, 0.4) 100%);
+  background-size: cover;
+  text-align: center;
+  padding: 7rem 0rem 2rem 1rem;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem 0rem;
+}
+
+.button {
+  margin: 1rem 0rem;
+  width: 22rem;
+  height: 4rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 3rem;
+  font-size: 1.3rem;
+  color: rgba(255, 255, 255, .9);
+}
+
+.companies {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 4.5rem 0rem 7.5rem 0rem;
+  gap: 4.5rem;
+}
+
+.about {
+  text-align: center;
+  font-weight: 500;
+  padding: 2rem 0rem;
+  background-color: hsla(201, 11%, 66%, .1);
+  font-size: 1.25rem;
+  margin-top: -2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.workflow {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Element */
+.clipboard__logo {
+  height: 8.5rem;
+}
+
+.description__legend {
+  font-weight: 600;
+  font-size: 2.2rem;
+  line-height: 2.8rem;
+  color: var(--DarkGrayishBlue);
+  margin-top: -1rem;
+}
+
+.description__title {
+  font-size: 2.5rem;
+}
+
+.description__subtitle {
+  font-size: 1.6em;
+  margin: 0rem 0rem;
+}
+
+.description__paragraphs {
+  margin: 1rem 1.5rem 3.1rem 1.5rem;
+}
+
+.description__img {
+  height: 16rem;
+  margin: 4rem 0rem;
+}
+
+.description__icons {
+  margin: 2rem 0rem;
+}
+
+.companies__logo {
+  width: 70%;
+}
+
+.about__logo {
+  height: 4rem;
+  width: 4rem;
+  padding: 1.2rem 0rem;
+}
+
+.about__information {
+  padding: .5rem 0rem;
+  text-decoration: none;
+  color: var(--DarkGrayishBlue);
+}
+
+.about__section {
+  display: flex;
+  flex-direction: column;
+}
+
+.about__social-media {
+  color: var(--DarkGrayishBlue);
+  text-decoration: none;
+}
+
+.about__networks {
+  display: flex;
+  gap: 3rem;
+  margin: 1rem 0rem;
+}
+
+.about__information:hover {
+  color: var(--StrongCyan);
+}
+
+.about__social-media:hover {
+  color: var(--StrongCyan);
+}
+
+
+/* Modifier */
+.button--green {
+  background-color: var(--StrongCyan);
+  box-shadow: 2px 2px hsl(171, 92%, 31%);
+}
+
+.button--green:hover {
+  background-color: hsla(171, 66%, 44%, .6);
+}
+
+.button--blue {
+  background-color: var(--LightBlue);
+  box-shadow: 2px 2px hsl(233, 45%, 40%);
+  margin-bottom: 6rem;
+}
+
+.button--blue:hover {
+  background-color: hsla(233, 100%, 69%, .6);
+}
+
+.description__paragraphs--space {
+  margin-bottom: 11rem;
+}
+
+
+@media (min-width: 1200px) {
+  .clipboard {
+    background-image: url(/images/bg-header-desktop.png) linear-gradient(0deg, rgba(246, 246, 246, 0.9) 0%, rgba(159, 171, 178, 0.4) 100%);
+  }
+
+  .button {
+    width: 15rem;
+    height: 3.5rem;
+    margin: 4rem .8rem 10rem .8rem;
+  }
+
+  .characteristics {
+    margin-top: 3rem;
+  }
+
+  .workflow {
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    margin: 3rem 0rem;
+    gap: 2rem;
+  }
+
+  .about {
+    text-align: left;
+    padding: 2rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: row;
+    gap: 0;
+  }
+
+  .companies {
+    flex-direction: row;
+  }
+
+  .workflow__characteristics {
+    width: 24rem;
+    height: 15rem;
+  }
+
+  .workflow__paragraphs {
+    margin: 1rem 0rem;
+  }
+
+  .characteristics__img {
+    position: relative;
+    right: 23.2rem;
+    height: 50rem;
+  }
+
+  .characteristics__text {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 58%;
+    top: 60rem;
+    text-align: left;
+    margin: 4.5rem 0rem;
+    height: 30rem;
+    width: 25rem;
+  }
+
+  .characteristics__paragraphs {
+    padding-bottom: 2.5rem;
+    margin: .5rem 0rem;
+  }
+
+
+  .description__legend {
+    font-size: 3rem;
+  }
+
+  .description__paragraphs {
+    font-size: 1.2rem;
+    margin: 0rem 23rem;
+  }
+
+  .companies__logo {
+    width: 10rem;
+  }
+
+  .description__img:last-of-type {
+    height: 36rem;
+  }
+
+  .about__logo {
+    height: 3rem;
+    width: 3rem;
+    padding-right: 13%;
+  }
+
+  .about__information {
+    text-align: start;
+    font-size: 1rem;
+    width: 9rem;
+  }
+
+  .about__networks {
+    gap: 1.5rem;
+    margin: 0% 10% 0% 20%;
+  }
+}
